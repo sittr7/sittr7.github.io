@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KQL Query Builder Redesign · Rachel Sitt</title>
+<meta name="description" content="How Rachel Sitt led a redesign of Microsoft Security's eDiscovery query builder that improved query correctness by 74%.">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand">Rachel <span>Sitt</span></a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    <div class="nav-links" id="navlinks">
+      <a href="../work.html">Work</a>
+      <a href="../skills.html">Skills</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html" class="nav-cta">Get in touch</a>
+    </div>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="wrap">
+    <span class="eyebrow">Early PM · A/B Testing</span>
+    <h1>The KQL Query Builder Redesign</h1>
+    <p class="sub">As a PM intern on Microsoft Security's eDiscovery team, I led research with users and engineers, prototyped the fix, and A/B tested a redesign that cut query errors sharply.</p>
+    <div class="cs-meta">
+      <div><div class="k">Role</div><div class="v">Explore PM Intern</div></div>
+      <div><div class="k">Company</div><div class="v">Microsoft Security (eDiscovery)</div></div>
+      <div><div class="k">When</div><div class="v">Summer 2020</div></div>
+      <div><div class="k">Skills</div><div class="v">User research, prototyping, A/B testing</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="cs-body">
+  <div class="wrap">
+    <div class="col">
+      <h2>The problem</h2>
+      <p>Microsoft Security's eDiscovery experience relied on KQL queries to retrieve electronically stored information for legal and investigative use. Users were making frequent syntax errors, and the existing query builder did not catch them early, so people built queries that failed only after they had invested effort in them.</p>
+
+      <h2>My task</h2>
+      <p>As a six-week PM intern, improve the query-building experience. The goal was concrete: help users build correct queries more often.</p>
+
+      <h2>What I did</h2>
+      <ul>
+        <li><strong>Led discussion sessions with users, managers, and engineers</strong> to identify the specific error cases people hit and the remediation behaviors that helped them recover.</li>
+        <li><strong>Built Figma prototypes</strong> of a query-building experience designed to catch syntax and structural errors earlier and give users more visibility and control.</li>
+        <li><strong>Designed an A/B test</strong> comparing the new design against the existing experience, so the improvement could be measured rather than asserted.</li>
+        <li><strong>Implemented part of the design</strong> when I moved to the SWE half of the internship, shipping the redesign rather than handing off a deck.</li>
+      </ul>
+
+      <div class="callout">
+        <div class="num">74%</div>
+        <p>Improvement in user query-building correctness through the new design, measured via A/B test against the existing experience.</p>
+      </div>
+
+      <h2>Why it matters for product</h2>
+      <p>This was my first taste of the PM loop done properly: research the real failure modes, prototype a specific fix, prove it with an experiment, then help ship it. It is the earliest signal of the instincts I have been deepening ever since, and it is the through-line from a 2020 internship to the founder work I do now. The 74% is real, measured, and mine.</p>
+    </div>
+
+    <div class="cs-nav">
+      <a href="lumen-prd.html" class="btn btn-ghost">← Previous</a>
+      <a href="../about.html" class="btn btn-primary">Read my story →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>© 2026 Rachel Sitt · Product Manager</div>
+    <div>
+      <a href="mailto:rsitt.coll@gmail.com">rsitt.coll@gmail.com</a> ·
+      <a href="https://linkedin.com/in/rachelsitt" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

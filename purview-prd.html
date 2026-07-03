@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 12-Team Purview PRD · Rachel Sitt</title>
+<meta name="description" content="How Rachel Sitt aligned 12 Microsoft Purview product teams on a single policy sync spec, from an engineering seat.">
+<link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="brand">Rachel <span>Sitt</span></a>
+    <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+    <div class="nav-links" id="navlinks">
+      <a href="../work.html">Work</a>
+      <a href="../skills.html">Skills</a>
+      <a href="../about.html">About</a>
+      <a href="../contact.html" class="nav-cta">Get in touch</a>
+    </div>
+  </div>
+</nav>
+
+<header class="cs-hero">
+  <div class="wrap">
+    <span class="eyebrow">Cross-functional · Technical</span>
+    <h1>The 12-Team Purview PRD</h1>
+    <p class="sub">Microsoft Purview's policy sync logic had drifted into 12 different shapes, one per product team. I wrote and aligned a single PRD to standardize it, from an engineering seat with no formal PM authority.</p>
+    <div class="cs-meta">
+      <div><div class="k">Role</div><div class="v">Software Engineer (PM-grade work)</div></div>
+      <div><div class="k">Company</div><div class="v">Microsoft Purview</div></div>
+      <div><div class="k">Scope</div><div class="v">12 product teams</div></div>
+      <div><div class="k">Skills</div><div class="v">Stakeholder alignment, PRD authoring, technical design</div></div>
+    </div>
+  </div>
+</header>
+
+<section class="cs-body">
+  <div class="wrap">
+    <div class="col">
+      <h2>The problem</h2>
+      <p>Microsoft Purview is a suite of 12 security and compliance products, from Data Loss Prevention to eDiscovery to Records Management, each built by its own team. The policy sync workflow, the mechanism that keeps a policy's state consistent across the platform, had been implemented slightly differently by each of those teams. Customers reported sync and status-visibility issues. Engineers across teams had no shared standard to build against. There was no single owner of the workflow.</p>
+
+      <h2>My task</h2>
+      <p>I was a software engineer, not a PM, and the fix was not a code change in one service. It was an alignment problem across 12 teams that did not report to each other or to me. I took on standardizing the policy sync workflow end to end: defining one shared design and getting every team to commit to it.</p>
+
+      <h2>What I did</h2>
+      <ul>
+        <li><strong>Mapped the affected teams and their differences.</strong> I documented how each of the 12 teams handled sync today, so the conversation could start from facts rather than assumptions.</li>
+        <li><strong>Surfaced conflicts before drafting, not after.</strong> Rather than writing a spec and defending it in a large review, I had 1:1 conversations with each team first. That is where the real disagreements lived: edge cases, ordering assumptions, ownership boundaries. I wanted those on the table before I wrote a word of the doc.</li>
+        <li><strong>Authored the PRD.</strong> I drafted a single specification for a unified sync calculation that absorbed the legitimate needs each team had raised, and made explicit the trade-offs where teams had to converge.</li>
+        <li><strong>Refactored the sync logic</strong> to align with the new design, so the spec was backed by working implementation rather than theory.</li>
+        <li><strong>Coordinated end-to-end validation</strong> with solution teams across multiple geographic locations to confirm the design held across the platform.</li>
+      </ul>
+
+      <div class="callout">
+        <div class="num">12 → 1</div>
+        <p>Consolidated 12 separate per-team sync designs into one shared spec that every team committed to. The alignment itself, getting 12 independent teams to converge on a single workflow, was the deliverable I owned end to end.</p>
+      </div>
+
+      <h2>Why it matters for product</h2>
+      <p>This is the work that made me want to be a PM. It was not about authority; I had none. It was about reducing 12 conflicting realities into one shared decision by understanding each team's actual constraints, surfacing conflict early, and writing a spec people could commit to. That is the core of the job. It is also a direct answer to the fair question about a candidate moving from engineering to product: I have already done stakeholder management at scale, just from a different seat.</p>
+
+      <p class="note">A note on honesty: I left Microsoft in April 2025, before the standardized workflow shipped. I therefore do not claim post-ship outcomes such as sync-issue reduction percentages or SLA deltas. The verifiable result is the alignment across all 12 teams, which is the part I owned.</p>
+    </div>
+
+    <div class="cs-nav">
+      <a href="../work.html" class="btn btn-ghost">← All work</a>
+      <a href="usability-study.html" class="btn btn-primary">Next: 30-Person Usability Study →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div>© 2026 Rachel Sitt · Product Manager</div>
+    <div>
+      <a href="mailto:rsitt.coll@gmail.com">rsitt.coll@gmail.com</a> ·
+      <a href="https://linkedin.com/in/rachelsitt" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
